@@ -3,8 +3,8 @@ import { Container } from './ContentGrid.styles';
 import { response } from '../../data';
 
 type Props = {
-  currentPage: number
-}
+  currentPage: number;
+};
 
 const ContentGrid = ({ currentPage }: Props) => {
   const startIndex = (currentPage - 1) * 6;

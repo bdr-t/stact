@@ -1,4 +1,6 @@
-export const gradients: any = {
+type Gradients = { [key: number]: string };
+
+export const gradients: Gradients = {
   1: 'linear-gradient(90deg, #dd5e89 0%, #f7bb97 100%)',
   2: 'linear-gradient(90deg, #00ff87 0%, #60efff 100%)',
   3: 'linear-gradient(90deg, #0061ff 0%, #60efff 100%)',

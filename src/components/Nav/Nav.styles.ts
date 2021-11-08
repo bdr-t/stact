@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledProps } from '../../types';
 
 export const Container = styled.div`
   height: 50px;
@@ -8,8 +9,8 @@ export const Container = styled.div`
 
   button {
     height: 28px;
-    color: ${(props) => props.theme.bg};
-    background-color: ${(props) => props.theme.color};
+    color: ${(props: StyledProps) => props.theme.bg};
+    background-color: ${(props: StyledProps) => props.theme.color};
     border: 0;
     border-radius: 8px;
     font-weight: bold;

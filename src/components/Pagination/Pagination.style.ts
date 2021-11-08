@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledProps } from '../../types';
 
 export const Container = styled.div`
   width: fit-content;
@@ -13,8 +14,8 @@ export const Container = styled.div`
     height: 24px;
     border-radius: 8px;
     border: none;
-    color: ${(props) => props.theme.bg};
-    background-color: ${(props) => props.theme.color};
+    color: ${(props: StyledProps) => props.theme.bg};
+    background-color: ${(props: StyledProps) => props.theme.color};
     cursor: pointer;
     font-weight: bold;
   }

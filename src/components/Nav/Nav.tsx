@@ -5,7 +5,7 @@ const Nav = () => (
   <Container>
     <LogoSm />
 
-    <button>Log out</button>
+    <button type="button">Log out</button>
   </Container>
 );
 

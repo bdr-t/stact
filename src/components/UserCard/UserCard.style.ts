@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledProps } from '../../types';
 
 export const Card = styled.div`
   position: relative;
@@ -10,7 +11,7 @@ export const Card = styled.div`
   border-width: 1px;
   border-style: solid;
   text-align: center;
-  border-color: ${(props) => props.theme.color};
+  border-color: ${(props: StyledProps) => props.theme.color};
   img {
     border-radius: 9999px;
     width: 80px;

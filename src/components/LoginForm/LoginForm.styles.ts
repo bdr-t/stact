@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledProps } from '../../types';
 
 export const InputDiv = styled.div`
   display: flex;
@@ -8,11 +9,11 @@ export const InputDiv = styled.div`
     width: 400px;
     height: 40px;
     border-radius: 8px;
-    border: ${(props) => `1px solid ${props.theme.color}`};
+    border: ${(props: StyledProps) => `1px solid ${props.theme.color}`};
     outline: none;
     background-color: transparent;
     padding-left: 1em;
-    color: ${(props) => props.theme.color};
+    color: ${(props: StyledProps) => props.theme.color};
   }
 
   @media (max-width: 425px) {
@@ -46,9 +47,9 @@ export const Form = styled.form`
     border-radius: 8px;
     border: none;
     outline: none;
-    color: ${(props) => props.theme.bg};
+    color: ${(props: StyledProps) => props.theme.bg};
     font-size: 18px;
-    background-color: ${(props) => props.theme.color};
+    background-color: ${(props: StyledProps) => props.theme.color};
     cursor: pointer;
   }
   @media (max-width: 425px) {

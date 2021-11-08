@@ -1,5 +1,5 @@
-import { Container } from "./Pagination.style";
-import { response } from "../../data";
+import { Container } from './Pagination.style';
+import { response } from '../../data';
 
 type Props = {
   paginate: (a: number) => void;
@@ -8,15 +8,15 @@ type Props = {
 const Pagination = ({ paginate }: Props) => {
   // render method
   const RenderPagination = () => {
-    const content: any = [];
+    const content: JSX.Element[] = [];
     for (let number = 1; number <= response.total_pages; number++) {
       content.push(
-        <button onClick={() => paginate(number)} key={number}>
+        <button type="button" onClick={() => paginate(number)} key={number}>
           {number}
         </button>
       );
     }
-    return content;
+    return content.length > 0 ? <RenderPagination /> : null;
   };
 
   return (

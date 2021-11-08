@@ -1,3 +1,14 @@
 {
-  "extends": ["wesbos/typescript"]
+  "extends": ["wesbos/typescript"],
+  "rules": {
+    "no-console": 2,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "properties": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "camelcase": [
+      "error",
+      { "allow": ["first_name", "last_name", "per_page", "total_pages"] }
+    ],
+    "no-use-before-define": "off"
+  }
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { StyledProps } from '../types';
 
 function LoginLogo() {
   return (
@@ -18,7 +19,7 @@ function LogoDashboard() {
 
 const Wrapper = styled.div`
   svg {
-    fill: ${(props) => props.theme.color};
+    fill: ${(props: StyledProps) => props.theme.color};
   }
 `;
 

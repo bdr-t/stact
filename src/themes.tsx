@@ -1,9 +1,11 @@
-const darkTheme = {
+import { ThemeType } from './types';
+
+const darkTheme: ThemeType = {
   bg: '#504E58',
   color: '#EDEDED',
 };
 
-const lightTheme = {
+const lightTheme: ThemeType = {
   color: '#504E58',
   bg: '#EDEDED',
 };

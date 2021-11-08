@@ -16,14 +16,10 @@ const Pagination = ({ paginate }: Props) => {
         </button>
       );
     }
-    return content.length > 0 ? <RenderPagination /> : null;
+    return content.length > 0 ? content : null;
   };
 
-  return (
-    <Container>
-      <RenderPagination />
-    </Container>
-  );
+  return <Container>{RenderPagination()}</Container>;
 };
 
 export default Pagination;
